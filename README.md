@@ -17,15 +17,15 @@
        Photos were taken before and after each try.  
        Majority of images were taken from the side (eg., middle image).    
        Before try  
-       <img src="https://github.com/u0953009/Binary-Classifier/blob/master/images/object_2_mustard_grasp_0rrd862.png" width="319" height="190"> <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/object_4_lego_grasp_0_side36.png" width="319" height="190">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/IMG_20190910_102329671.jpg" width="145" height="190">  
+       <img src="https://github.com/u0953009/Binary-Classifier/blob/master/images/object_2_mustard_grasp_0rrd862.png" width="319" height="190"> <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_4_lego_grasp_0_side36.png?token=AGAJV46XHZMSZSOB6DSTMAC6YWNMY" width="319" height="190">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/IMG_20190910_102329671.jpg?token=AGAJV45B5GVZIIM2GGWWUYK6YWNQA" width="145" height="190">  
        After try  
-       <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/2018-09-05-1109062018ral_img957.jpg" width="319" height="190"> <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/object_0_pringles_grasp_1_lift_side377.png" width="319" height="190">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/IMG_20180905_092459phoneral967.jpg" width="145" height="190"><p>&nbsp;</p>
+       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/2018-09-05-1109062018ral_img957.jpg?token=AGAJV47YRTLRIRLFXJC4R626YWNR6" width="319" height="190"> <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_pringles_grasp_1_lift_side377.png?token=AGAJV45PWRM6XROQCLL2LNK6YWNTK" width="319" height="190">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/IMG_20180905_092459phoneral967.jpg?token=AGAJV45B7ODCLROCDU33MZC6YWNVI" width="145" height="190"><p>&nbsp;</p>
      - Simulation image samples  
-       <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/object_0_3m_high_tack_spray_adhesive_grasp_0td1717303.png" width="303" height="227">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/object_0_3m_high_tack_spray_adhesive_grasp_8_lift_6_880.png" width="303" height="227"> 
+       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_0td1717303.png?token=AGAJV46HQ72A7B42H65IRRC6YWNWS" width="303" height="227">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_8_lift_6_880.png?token=AGAJV42HIEWPUZAGIUVUEPC6YWNYM" width="303" height="227"> 
          <p>&nbsp;</p>      
      - Extracted image samples from videos  
        Since images were extracted from video, there are images that capture moments the robotic hand is on the way to grab an object (not just before or after try). And these images are labeled as unsuccessful.    
-       <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/frame15049.jpg" width="303" height="170">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/frame15855.jpg" width="303" height="170">
+       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/frame15049.jpg?token=AGAJV442R3U54JWBAT2YIS26YWNZ2" width="303" height="170">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/frame15855.jpg?token=AGAJV42OK4WPOI33QA7FOD26YWN3G" width="303" height="170">
 	  <p>&nbsp;</p>
 **3. Model reports**  
    - Training configuration  
@@ -35,7 +35,7 @@
      - input shape - the input shape of the model  
    - The train data was augmented with factors shown below; factors are applied randomly in each epoch.  
 	 <p align="center">  
-	 <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/augmentation.png" "width="282" height="152">  
+	 <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/augmentation.png?token=AGAJV4YT2RMFAY4L3JENJH26YWN4O" "width="282" height="152">  
 																	 </p>  
    - 143 photos (71 successful + 72 unsuccessful) are used to test.  
 																	 
@@ -44,13 +44,13 @@
    - Models
       - Model 1  
         Train: 700 (photo),  Valid: 500 (photo),  test: 143 (photo),  input shape: (150,150,3)  
-	 <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/150/accuracy.png" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/150/loss.png" width="352"        height="238">  
+	 <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/150/accuracy.png?token=AGAJV477F7OBWODJCOOJUT26YWN54" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/150/loss.png?token=AGAJV457HO2ZQ3A65HW44IS6YWN6S" width="352"        height="238">  
 	 Accuracy range is from 0.75 to 0.79 over 30 epochs.  
 	 109 (48 successful + 61 unsuccessful) out of 143 tests are correct. (accuracy 0.76)  
 	 
       - Model 2  
         Train: 700 (photo),  Valid: 500 (photo),  test: 143 (photo),  input shape: (350,350,3)
-	  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350/accuracy.png" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350/loss.png" width="352"        height="238">  
+	  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350/accuracy.png?token=AGAJV45HMF6BZ3VSUJZ2CH26YWOAU" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350/loss.png?token=AGAJV42N6YADOISBSBMZQZS6YWOCC" width="352"        height="238">  
 	 Accuracy range is from 0.82 to 0.86 over 30 epochs.  
 	 114 (46 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.79)
 	 
@@ -58,7 +58,7 @@
       - Model 3  
         Train: 700 (photo) + 500 (simulation),  Valid: 500 (photo), input shape: (350,350,3)  
         To increase the number of training data, simulation images were added.
-	 <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350sim/accuracy.png" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350sim/loss.png" width="352"        height="238">  
+	 <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350sim/accuracy.png?token=AGAJV4356OHWKM47CSFBJGS6YWODC" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350sim/loss.png?token=AGAJV43HGNMRJVTTBGHABIC6YWOD2" width="352"        height="238">  
 	 Accuracy range is from 0.79 to 0.82 over 30 epochs.  
 	 114 (46 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.79)
 	 
@@ -66,7 +66,7 @@
       - Model 4  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
         To increase the number of training data, images extracted from experiment videos were added.
-	  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350ext/accuracy.png" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/Binary-Classifier/master/images/350ext/loss.png" width="352"        height="238">  
+	  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350ext/accuracy.png?token=AGAJV4ZIRJIQL66WSW2WZYK6YWOFK" width="352"        height="238">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/350ext/loss.png?token=AGAJV47Z2ZHR3JYDP6XLZ626YWOGA" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 127 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.88)
 
