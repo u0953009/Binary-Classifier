@@ -18,11 +18,12 @@
        Majority of images were taken from the side (eg., middle image).    
        Before try  
        <img src="https://github.com/u0953009/Binary-Classifier/blob/master/images/object_2_mustard_grasp_0rrd862.png" width="319" height="190"> 
-       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_4_lego_grasp_0_side36.png?token=AGAJV427YDVHEO6OP4YSSSK6YWOJ2" width="319" height="190">  <img src="https://github.com/u0953009/images/blob/master/bc/object_4_lego_grasp_0_side36.png" width="145" height="190">  
+       <img src="https://github.com/u0953009/images/blob/master/bc/object_4_lego_grasp_0_side36.png" width="319" height="190">  
+       <img src="https://github.com/u0953009/images/blob/master/bc/IMG_20190910_102329671.jpg" width="145" height="190">  
        After try  
-       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/2018-09-05-1109062018ral_img957.jpg?token=AGAJV47YRTLRIRLFXJC4R626YWNR6" width="319" height="190"> <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_pringles_grasp_1_lift_side377.png?token=AGAJV45PWRM6XROQCLL2LNK6YWNTK" width="319" height="190">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/IMG_20180905_092459phoneral967.jpg?token=AGAJV45B7ODCLROCDU33MZC6YWNVI" width="145" height="190"><p>&nbsp;</p>
+       <img src="https://github.com/u0953009/images/blob/master/bc/2018-09-05-1109062018ral_img957.jpg" width="319" height="190"> <img src="https://github.com/u0953009/images/blob/master/bc/object_0_pringles_grasp_1_lift_side377.png" width="319" height="190">  <img src="https://github.com/u0953009/images/blob/master/bc/IMG_20180905_092459phoneral967.jpg" width="145" height="190"><p>&nbsp;</p>
      - Simulation image samples  
-       <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_0td1717303.png?token=AGAJV46HQ72A7B42H65IRRC6YWNWS" width="303" height="227">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_8_lift_6_880.png?token=AGAJV42HIEWPUZAGIUVUEPC6YWNYM" width="303" height="227"> 
+       <img src="https://github.com/u0953009/images/blob/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_0td1717303.png" width="303" height="227">  <img src="https://raw.githubusercontent.com/u0953009/images/master/bc/object_0_3m_high_tack_spray_adhesive_grasp_8_lift_6_880.png?token=AGAJV42HIEWPUZAGIUVUEPC6YWNYM" width="303" height="227"> 
          <p>&nbsp;</p>      
      - Extracted image samples from videos  
        Since images were extracted from video, there are images that capture moments the robotic hand is on the way to grab an object (not just before or after try). And these images are labeled as unsuccessful.    
