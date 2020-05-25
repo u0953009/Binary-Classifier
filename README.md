@@ -1,4 +1,4 @@
-# Binary Image Classifier using Keras for Examining Robotic Grasp Success
+# Binary Image Classifier Using Keras for Examining Robotic Grasp Success
      This classifier is a binary classifier which determines if a grasping try of the robotic hand is successful or not.
 
 ## Model description
@@ -12,7 +12,7 @@
 **2. Data Description**
    - Images used to train this classifier are (1) photos (2) simulation images (3) extracted images from videos of an Allegro robotic hand trying to grasp an object.
    - After the robotic hand tries to grasp, if it is successful it has an object in hand. Otherwise, an object is on the desk or floor.
-   - data samples
+   - Data samples
      - Photo samples  
        Photos were taken before and after each try.  
        Majority of images were taken from the side (eg., middle image).    
