@@ -1,4 +1,4 @@
-# Binary Image classifier using keras for Examining Robotic Grasp Success
+# Binary Image Classifier using Keras for Examining Robotic Grasp Success
      This classifier is a binary classifier which determines if a grasping try of the robotic hand is successful or not.
 
 ## Model description
@@ -9,7 +9,7 @@
    - On top of the pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).  
    - Fine tuning - Only the added layers(classification layers) are trained for 10 epochs first, and then all layers from mixed7 layer to the top layer are trained for 30 epochs.  
        <p>&nbsp;</p>
-**2. Data description**
+**2. Data Description**
    - Images used to train this classifier are (1) photos (2) simulation images (3) extracted images from videos of an Allegro robotic hand trying to grasp an object.
    - After the robotic hand tries to grasp, if it is successful it has an object in hand. Otherwise, an object is on the desk or floor.
    - data samples
@@ -27,7 +27,7 @@
        Since images were extracted from video, there are images that capture moments the robotic hand is on the way to grab an object (not just before or after try). And these images are labeled as unsuccessful.    
        <img src="https://github.com/u0953009/images/blob/master/bc/frame15049.jpg" width="303" height="170">  <img src="https://github.com/u0953009/images/blob/master/bc/frame15855.jpg" width="303" height="170">
 	  <p>&nbsp;</p>
-**3. Model reports**  
+**3. Model Reports**  
    - Training configuration  
      - Train - the number of images to train the model   
      - Valid - the number of images to validate the model  
@@ -86,8 +86,7 @@
    - Underfitting and overfittings are observed during training the models. They appear in different patterns depending on different numbers, or different types, of data. Using a few different model architectures and comparing the results might be helpful  to find a more suitable architecture for the dataset.    
    
 **6. Subsequent Work**
-   - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in   
-   https://github.com/u0953009/11  
+   - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in ttps://github.com/u0953009/11  
    
 ## Installation
 >pip install -r requirements.txt
