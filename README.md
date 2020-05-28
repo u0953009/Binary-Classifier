@@ -3,7 +3,7 @@
 
 ## Model description
 **1. Model Architecture**
-   - The model uses pre-trained model Inception V3 and Inception-Resnet-V2.  
+   - Pre-trained models, Inception V3 and Inception-Resnet-V2, are used.  
    - Inception V3 and Inception-Resnet-V2 are widely-used image recognition models that has been trained with ImageNet dataset. Inception V3 Inception-Resnet-V2 shows 0.803 TOP-1 accuracy, 0.953 TOP-5 accuracy and 0.779 TOP-1 accuracy, 0.937 TOP-5 accuracy, respectively. (https://keras.io/api/applications/)  
    - Since top layers of pre-trained model is too specific for the original purpose, a few top layers of the pre-trained models are removed: from the top to right above mixed7 layer in Inception V3 and from the top to the right above mixed_7a layer in Inception-Resnet-V2.  
    - On top of the pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).    
