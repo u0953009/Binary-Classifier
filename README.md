@@ -72,7 +72,7 @@
      
       - Model 5  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
-        Inception V3 pre-trained model was replaced with InceptionResV2.
+        Inception V3 pre-trained model was replaced with InceptionResV2.  
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/acc.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 138 (69 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.96)  
