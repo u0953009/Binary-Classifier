@@ -3,11 +3,11 @@
 
 ## Model description
 **1. Model Architecture**
-   - The model uses pre-trained model Inception V3.  
-   - Inception v3 is a widely-used image recognition model that has been shown to attain greater than 78.1% accuracy on the ImageNet dataset. (https://cloud.google.com/tpu/docs/inception-v3-advanced)   
-   - Since top layers of pre-trained model is too specific for the original purpose, a few top layers of the pre-trained model are removed: from the top to right above mixed7 layer. (https://github.com/u0953009/Binary-Classifier/blob/master/images/inception%20v3/inception.txt)    
-   - On top of the pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).  
-   - Fine tuning - Only the added layers(classification layers) are trained for 10 epochs first, and then all layers from mixed7 layer to the top layer are trained for 30 epochs.  
+   - The model uses pre-trained model Inception V3 and Inception-Resnet-V2.  
+   - Inception V3 and Inception-Resnet-V2 are widely-used image recognition models that has been trained with ImageNet dataset. Inception V3 Inception-Resnet-V2 shows 0.803 TOP-1 accuracy, 0.953 TOP-5 accuracy and 0.779 TOP-1 accuracy, 0.937 TOP-5 accuracy, respectively. (https://keras.io/api/applications/)  
+   - Since top layers of pre-trained model is too specific for the original purpose, a few top layers of the pre-trained models are removed: from the top to right above mixed7 layer in Inception V3 and from the top to the right above mixed_7a layer in Inception-Resnet-V2.  
+   - On top of the pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).    
+
        <p>&nbsp;</p>
 **2. Data Description**
    - Images used to train this classifier are (1) photos (2) simulation images (3) extracted images from videos of an Allegro robotic hand trying to grasp an object.
