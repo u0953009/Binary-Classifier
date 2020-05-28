@@ -68,14 +68,21 @@
         To increase the number of training data, images extracted from experiment videos were added.
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
-	 127 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.88)
+	 127 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.88)  
+     
+      - Model 5  
+        Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
+        Inception V3 pre-trained model was replaced with InceptionResV2.
+	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/acc.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/loss.png" width="352"        height="238">  
+	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
+	 138 (69 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.96)  
 
          <p>&nbsp;</p>
 **4. Conclusion**
    - During the training, there was noticeable improvement in identifying unsuccessful tries when input dimension was increased from 150x150 to 350x350.  
    - Adding simulation images to train the model didn't make a drastic change even though more than 50% of the number of original images were added. It seems that simulation images barely help to improve the accuracy of classification.  
    - When adding extraced images from videos, there was an improvement in classifying successful tries.  
-   - Model 4 shows 88% accuracy on the test. It is a moderate number. The model classified unsuccessful photos much better than successful photos.  
+   - Pre-trained model, InceptionResV2, shows the best accuracy, 96%.  
 
 **5. Discussion**
    - First of all, insufficient number of training data was the hardest problem to solve in training the model.  
@@ -84,7 +91,8 @@
       - In case of the extracted images, though the images are taken from various angles, they are not balanced either.  
    - It is needed to obtain more experiment photos and videos in order to improve the accuracy. Finding techniques to balance the data is also worth a try.  
    - Underfitting and overfittings are observed during training the models. They appear in different patterns depending on different numbers, or different types, of data. Using a few different model architectures and comparing the results might be helpful  to find a more suitable architecture for the dataset.    
-   
+    - Nevertheless, when changing pre-trained model, there was a noticable improvement. It seems that choosing an appropriate pre-trained model is critical for a better accuracy.  
+    
 **6. Subsequent Work**
    - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in https://github.com/u0953009/11  
    
