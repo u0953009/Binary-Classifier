@@ -94,7 +94,7 @@
       - Photos taken from the side comprise the majority of the dataset, while photos taken from different angles, such as from the top, are relatively few.  
       - In case of the extracted images, though the images are taken from various angles, they are not balanced either.  
    - It is needed to obtain more experiment photos and videos in order to improve the accuracy. Finding techniques to balance the data is also worth a try.  
-   - Underfitting and overfittings are observed during training the models. They appear in different patterns depending on different numbers, or different types, of data. Using a few different model architectures and comparing the results might be helpful  to find a more suitable architecture for the dataset.    
+   - Underfitting and overfitting are observed during training the models using Inception V3 pre-trained model. They appear in different patterns depending on different numbers, or different types, of data. Using a few different model architectures and comparing the results might be helpful  to find a more suitable architecture for the dataset.    
    - Nevertheless, when changing pre-trained model, there was a noticable improvement. It seems that choosing an appropriate pre-trained model is critical for a better accuracy.  
     
 **6. Subsequent Work**
