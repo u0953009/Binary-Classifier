@@ -15,7 +15,7 @@
    - Data samples
      - Photo samples  
        Photos were taken before and after each try.  
-       Majority of images were taken from the side (eg., middle image).    
+       Majority of images were taken from the side (e.g., middle image).    
        Before try  
        <img src="https://github.com/u0953009/Binary-Classifier/blob/master/images/object_2_mustard_grasp_0rrd862.png" width="319" height="190"> <img src="https://github.com/u0953009/images/blob/master/bc/object_4_lego_grasp_0_side36.png" width="319" height="190"> <img src="https://github.com/u0953009/images/blob/master/bc/IMG_20190910_102329671.jpg" width="145" height="190">  
        After try  
