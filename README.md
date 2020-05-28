@@ -86,7 +86,7 @@
    - During the training, there was noticeable improvement in identifying unsuccessful tries when input dimension was increased from 150x150 to 350x350.  
    - Adding simulation images to train the model didn't make a drastic change even though more than 50% of the number of original images were added. It seems that simulation images barely help to improve the accuracy of classification.  
    - When adding extraced images from videos, there was an improvement in classifying successful tries.  
-   - Pre-trained model, InceptionResV2, shows the best accuracy, 96%.  
+   - Pre-trained model, InceptionResV2, shows the best accuracy, 0.96.  
 
 **5. Discussion**
    - First of all, insufficient number of training data was the hardest problem to solve in training the model.  
