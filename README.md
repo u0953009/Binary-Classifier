@@ -48,7 +48,7 @@
 	 <img src="https://github.com/u0953009/images/blob/master/bc/150/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/150/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.75 to 0.79 over 30 epochs.  
 	 109 (48 successful + 61 unsuccessful) out of 143 tests are correct. (accuracy 0.76)  
-	  <img src="https://github.com/u0953009/images/blob/master/bc/150/test.png"">  
+	  <img src="https://github.com/u0953009/images/blob/master/bc/150/test.png">  
 	 
       - Model 2  
         Train: 700 (photo),  Valid: 500 (photo),  test: 143 (photo),  input shape: (350,350,3)  
@@ -56,7 +56,7 @@
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.82 to 0.86 over 30 epochs.  
 	 112 (43 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350/test.png"">  
+	 <img src="https://github.com/u0953009/images/blob/master/bc/350/test.png">  
 	 
       - Model 3  
         Train: 700 (photo) + 500 (simulation),  Valid: 500 (photo), input shape: (350,350,3)  
@@ -65,7 +65,7 @@
 	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350sim/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.79 to 0.82 over 30 epochs.  
 	 112 (43 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png"">  
+	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png">  
 	 
 	 
       - Model 4  
@@ -75,7 +75,7 @@
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 127 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.88)  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350ext/test.png"">  
+	 <img src="https://github.com/u0953009/images/blob/master/bc/350ext/test.png">  
      
       - Model 5  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
@@ -83,7 +83,7 @@
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/acc.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 138 (69 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.96)  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/test.png"">  
+	 <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/test.png">  
 
          <p>&nbsp;</p>
 **4. Conclusion**
