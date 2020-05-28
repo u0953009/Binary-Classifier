@@ -51,7 +51,7 @@
 	 109 (48 successful + 61 unsuccessful) out of 143 tests are correct. (accuracy 0.76)  
 	  <p align="center">  
 	  <img src="https://github.com/u0953009/images/blob/master/bc/150/test.png" width="352"        height="238">  
-	  </p>  
+ 
       - Model 2  
         Train: 700 (photo),  Valid: 500 (photo),  test: 143 (photo),  input shape: (350,350,3)  
 	Pre-trained model - Inception V3  
