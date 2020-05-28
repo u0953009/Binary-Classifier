@@ -32,13 +32,17 @@
      - Train - the number of images to train the model   
      - Valid - the number of images to validate the model  
      - test  - the number of images to test the model  
-     - red dots
      - input shape - the input shape of the model  
+   
    - The train data was augmented with factors shown below; factors are applied randomly in each epoch.  
 	 <p align="center">  
 	 <img src="https://github.com/u0953009/images/blob/master/bc/augmentation.png" "width="282" height="152">  
 																	 </p>  
    - 143 photos (71 successful + 72 unsuccessful) are used to test.  
+   - Test result graph  
+     - Left half side is the output values of successful data test set.  
+     - Right half side is the output values of unsuccessful data test set.  
+     - If the output value is less than 0.5, the classifier judges as successful and the and the value is marked as blue in the graph. Otherwise, the classifier judges as unsuccessful and the value is marked as red in the graph.    
 																	 
 	
 	
