@@ -99,6 +99,7 @@
     
 **6. Subsequent Work**
    - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in https://github.com/u0953009/11  
+   - The video binary classifier for examining robotic grasp sucess is built based on the grayscale image binary classifier. The details are discussed in https://github.com/u0953009/Video-Prediction  
    
 ## Installation
 >pip install -r requirements.txt
