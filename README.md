@@ -97,7 +97,7 @@
    - Underfitting and overfitting are observed during training the models using Inception V3 pre-trained model. They appear in different patterns depending on different numbers, or different types, of data. There was no underfitting or overfitting observed in Inception-ResNet-V2.     
    - When Inception-ResNet-V2 was used, the accuracy was improved from 0.88 to 0.96. It seems that, in the given situation, using Inception-ResNet-V2 pre-trained model is more sutiable than Inception V3.  
     
-**6. Subsequent Work**
+**6. Subsequent Works**
    - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in https://github.com/u0953009/11  
    - The video binary classifier for examining robotic grasp sucess is built based on the grayscale image binary classifier. The details are discussed in https://github.com/u0953009/Video-Prediction  
    
