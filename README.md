@@ -48,28 +48,28 @@
 	 <img src="https://github.com/u0953009/images/blob/master/bc/150/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/150/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.75 to 0.79 over 30 epochs.  
 	 109 (48 successful + 61 unsuccessful) out of 143 tests are correct. (accuracy 0.76)  
-	 <p align="center">  
+	  <p align="center">  
 	  <img src="https://github.com/u0953009/images/blob/master/bc/150/test.png">  
-	 </p>  
+	  </p>  
       - Model 2  
         Train: 700 (photo),  Valid: 500 (photo),  test: 143 (photo),  input shape: (350,350,3)  
 	Pre-trained model - Inception V3  
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.82 to 0.86 over 30 epochs.  
-	 112 (43 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
-	 <p align="center">  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350/test.png">  
-	 </p>  
+	 112 (43 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
+	  <p align="center">  
+	  <img src="https://github.com/u0953009/images/blob/master/bc/350/test.png">  
+	  </p>  
       - Model 3  
         Train: 700 (photo) + 500 (simulation),  Valid: 500 (photo), input shape: (350,350,3)  
 	Pre-trained model - Inception V3  
         To increase the number of training data, simulation images were added.
 	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350sim/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.79 to 0.82 over 30 epochs.  
-	 112 (43 successful + 68 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
-	 <p align="center">  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png">  
-	 </p>  
+	 112 (43 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
+	  <p align="center">  
+	  <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png">  
+	  </p>  
 	 
       - Model 4  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
@@ -77,10 +77,10 @@
         To increase the number of training data, images extracted from experiment videos were added.
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
-	 127 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.88)  
-	 <p align="center">  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350ext/test.png">  
-	 </p>  
+	 124 (57 successful + 67 unsuccessful) out of 143 tests are correct. (accuracy 0.86)  
+	  <p align="center">  
+	  <img src="https://github.com/u0953009/images/blob/master/bc/350ext/test.png">  
+	  </p>  
      
       - Model 5  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
@@ -88,9 +88,9 @@
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/acc.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 138 (69 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.96)  
-	 <p align="center">  
-	 <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/test.png">  
-	 </p>  
+	  <p align="center">  
+	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/test.png">  
+	  </p>  
 
          <p>&nbsp;</p>
 **4. Conclusion**
@@ -106,7 +106,7 @@
       - In case of the extracted images, though the images are taken from various angles, they are not balanced either.  
    - It is needed to obtain more experiment photos and videos in order to improve the accuracy. Finding techniques to balance the data is also worth a try.  
    - Underfitting and overfitting are observed during training the models using Inception V3 pre-trained model. They appear in different patterns depending on different numbers, or different types, of data. There was no underfitting or overfitting observed in Inception-ResNet-V2.     
-   - When Inception-ResNet-V2 was used, the accuracy was improved from 0.88 to 0.96. It seems that, in the given situation, using Inception-ResNet-V2 pre-trained model is more sutiable than Inception V3.  
+   - When Inception-ResNet-V2 was used, the accuracy was improved from 0.86 to 0.96. It seems that, in the given situation, using Inception-ResNet-V2 pre-trained model is more sutiable than Inception V3.  
     
 **6. Subsequent Works**
    - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in https://github.com/u0953009/11  
