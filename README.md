@@ -68,9 +68,9 @@
 	 <img src="https://github.com/u0953009/images/blob/master/bc/350sim/accuracy.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350sim/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.79 to 0.82 over 30 epochs.  
 	 112 (43 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.78)  
-          <p align="center">   
-	 
-	  <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png" width="352"        height="238">  
+          <p align="center">  
+	      <img src="https://github.com/u0953009/images/blob/master/bc/350sim/test.png" width="352"        height="238">    
+	  
 
 	 
       - Model 4  
