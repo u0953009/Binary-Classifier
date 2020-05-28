@@ -8,7 +8,7 @@
    - Since top layers of the pre-trained models are too specific for the original purpose, a few top layers of the pre-trained models are removed: from the top to right above mixed7 layer in Inception V3 and from the top to the right above mixed_7a layer in Inception-ResNet-V2.  
    - On top of each pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).    
 
-       <p>&nbsp;</p>
+       
 **2. Data Description**
    - Images used to train this classifier are (1) photos (2) simulation images (3) extracted images from videos of an Allegro robotic hand trying to grasp an object.
    - After the robotic hand tries to grasp, if it is successful it has an object in hand. Otherwise, an object is on the desk or floor.
