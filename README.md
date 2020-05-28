@@ -3,9 +3,9 @@
 
 ## Model description
 **1. Model Architecture**
-   - Pre-trained models, Inception V3 and Inception-Resnet-V2, are used.  
-   - Inception V3 and Inception-Resnet-V2 are widely-used image recognition models that have been trained with ImageNet dataset. Inception V3 and Inception-Resnet-V2 show 0.779 TOP-1 accuracy and 0.937 TOP-5 accuracy, and 0.803 TOP-1 accuracy and 0.953 TOP-5 accuracy, respectively. (https://keras.io/api/applications/)  
-   - Since top layers of the pre-trained models are too specific for the original purpose, a few top layers of the pre-trained models are removed: from the top to right above mixed7 layer in Inception V3 and from the top to the right above mixed_7a layer in Inception-Resnet-V2.  
+   - Pre-trained models, Inception V3 and Inception-ResNet-V2, are used.  
+   - Inception V3 and Inception-Resnet-V2 are widely-used image recognition models that have been trained with ImageNet dataset. Inception V3 and Inception-ResNet-V2 show 0.779 TOP-1 accuracy and 0.937 TOP-5 accuracy, and 0.803 TOP-1 accuracy and 0.953 TOP-5 accuracy, respectively. (https://keras.io/api/applications/)  
+   - Since top layers of the pre-trained models are too specific for the original purpose, a few top layers of the pre-trained models are removed: from the top to right above mixed7 layer in Inception V3 and from the top to the right above mixed_7a layer in Inception-ResNet-V2.  
    - On top of each pre-trained model, classification layers are built: Fully connected layer (1024 units, ReLU), drop out layer (1024, drop rate 0.2) and output layer (1, Sigmoid).    
 
        <p>&nbsp;</p>
@@ -76,7 +76,7 @@
      
       - Model 5  
         Train: 700 (photo) + 1007 (extracted),  Valid: 500 (photo), input shape: (350,350,3)  
-	Pre-trained model - Inception Resnet V2  
+	Pre-trained model - Inception ResNet V2  
 	  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/acc.png" width="352"        height="238">  <img src="https://github.com/u0953009/images/blob/master/bc/350irv2/loss.png" width="352"        height="238">  
 	 Accuracy range is from 0.96 to 0.97 over 30 epochs.  
 	 138 (69 successful + 69 unsuccessful) out of 143 tests are correct. (accuracy 0.96)  
@@ -94,8 +94,8 @@
       - Photos taken from the side comprise the majority of the dataset, while photos taken from different angles, such as from the top, are relatively few.  
       - In case of the extracted images, though the images are taken from various angles, they are not balanced either.  
    - It is needed to obtain more experiment photos and videos in order to improve the accuracy. Finding techniques to balance the data is also worth a try.  
-   - Underfitting and overfitting are observed during training the models using Inception V3 pre-trained model. They appear in different patterns depending on different numbers, or different types, of data. Using a few different model architectures and comparing the results might be helpful  to find a more suitable architecture for the dataset.    
-   - Nevertheless, when changing pre-trained model, there was a noticable improvement. It seems that choosing an appropriate pre-trained model is critical for a better accuracy.  
+   - Underfitting and overfitting are observed during training the models using Inception V3 pre-trained model. They appear in different patterns depending on different numbers, or different types, of data.   
+   - There was no underfitting or overfitting observed in Inception-ResNet-V2. It seems that Inception-ResNet-V2 is more suitable in this case.  
     
 **6. Subsequent Work**
    - The grayscale image binary classifier for examining robotic grasp sucess is built based on this work on RGB image binary classifier. Considerations on the different accuracies of various architectures, the variations of training times, etc. are discussed in https://github.com/u0953009/11  
