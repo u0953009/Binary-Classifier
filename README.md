@@ -42,7 +42,7 @@
    - Test result graph  
      - Left half side is the output values of successful data test set.  
      - Right half side is the output values of unsuccessful data test set.  
-     - If the output value is less than 0.5, the classifier judges as successful and the and the value is marked as blue in the graph. Otherwise, the classifier judges as unsuccessful and the value is marked as red in the graph.    
+     - If the output value is less than 0.5, the classifier judges as successful and the value is marked as blue in the graph. Otherwise, the classifier judges as unsuccessful and the value is marked as red in the graph.    
 																	 
 	
 	
